@@ -60,25 +60,25 @@ El dataset contiene **8k de registros** aproximadamente, de las que contiene dos
 
 En *MINIMUM_PAYMENTS* y *CREDIT_LIMIT* hay valores faltantes, con un valor de **0.01%** (313 registros) y **3.50%** (1 registro) respectivamente.
 
-![Grafico de dispersion](https://github.com/ajalca/cbe_credit_card/blob/exploracion/images/readme/10222024_dispersion_balance_y_credit_limit.png)
+![Grafico de dispersion](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_dispersion_balance_y_credit_limit.png)
 
 A medida que aumenta el saldo en la tarjeta de crédito también aumente el límite de crédito, se ve un comportamiento de crecimiento ascendente.
 Entre un saldo menor a **5k** y una línea de crédito menor a **10k** hay mayor concentración por lo que se aprecia que la mayoría de clientes tienen un saldo y crédito bajo.
 En la parte superior derecha hay unos puntos outliers, que representa a unos pocos clientes con alto balance y crédito.
 Hay otra dispersión de puntos con valores superiores a **20k** en la línea de créditos pero con un balance bajo, puede representar clientes con alta límite de crédito disponible pero no lo usan.
 
-![Grafico de dispersion con categoría](https://github.com/ajalca/cbe_credit_card/blob/exploracion/images/readme/10222024_dispersion_balance_y_credit_limit_por_tenure.png)
+![Grafico de dispersion con categoría](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_dispersion_balance_y_credit_limit_por_tenure.png)
 
 Se agregó la antigüedad de los usuarios en meses, se aprecia para ***6 meses en azul*** y para ***12 meses en rojo***. Los clientes con más antigüedad están más dispersos lo que indica gran variedad de saldos y líneas de crédito.
 
-![Grafico de cajas](https://github.com/ajalca/cbe_credit_card/blob/exploracion/images/readme/10222024_plot_balance_y_tenure.png)
+![Grafico de cajas](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_plot_balance_y_tenure.png)
 
 La distribución entre el saldo y la antigüedad.
 Conforme la antigüedad aumenta es más variable el incremento en el saldo, y outliers en niveles superiores de saldo.
 Desde el ***9° mes*** los outliers son más frecuentes lo que sugiere que los clientes van acumulando su saldo como avanza el tiempo.
 En cada uno de los niveles de antigüedad se aprecia a la mediana algo constante pero con un aumento en la dispersión por lo que no todos los clientes ahorran de la misma manera.
 
-![Histograma de conjuntos](https://github.com/ajalca/cbe_credit_card/blob/exploracion/images/readme/10222024_histograma_payments_purchases.png)
+![Histograma de conjuntos](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_histograma_payments_purchases.png)
 
 La mayoría de los clientes tienen pagos relativamente bajos menor a **10k** por la concentración en la esquina inferior izquierda de la gráfica.
 Se ve una correlación positiva entre los pagos y las compras, a medida que aumentan los pagos también aumentan las compras; pero también hay una alta dispersión en está tendencia lo que nos indica que no es un comportamiento lineal para todos.
