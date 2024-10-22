@@ -75,7 +75,7 @@ Conforme la antigüedad aumenta es más variable el incremento en el saldo, y ou
 Desde el ***9° mes*** los outliers son más frecuentes lo que sugiere que los clientes van acumulando su saldo como avanza el tiempo.
 En cada uno de los niveles de antigüedad se aprecia a la mediana algo constante pero con un aumento en la dispersión por lo que no todos los clientes ahorran de la misma manera.
 
-![Histograma de conjuntos](https://github.com/ajalca/cbe_credit_card/blob/exploracion/images/readme/10222024_plot_balance_y_tenure.png)
+![Histograma de conjuntos](https://github.com/ajalca/cbe_credit_card/blob/exploracion/images/readme/10222024_histograma_payments_purchases)
 La mayoría de los clientes tienen pagos relativamente bajos menor a **10k** por la concentración en la esquina inferior izquierda de la gráfica.
 Se ve una correlación positiva entre los pagos y las compras, a medida que aumentan los pagos también aumentan las compras; pero también hay una alta dispersión en está tendencia lo que nos indica que no es un comportamiento lineal para todos.
 Hay unos outliers en pagos y compras superando los **30k**. Pero la mayoría de usuarios tienden hacer pagos y compras pequeñas como se visualiza en los histogramas.
