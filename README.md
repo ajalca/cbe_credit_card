@@ -57,6 +57,7 @@ El dataset contiene **8k de registros** aproximadamente, de las que contiene dos
       <li>CUST_ID</li>
     </ol>
 </ul>
+
 En *MINIMUM_PAYMENTS* y *CREDIT_LIMIT* hay valores faltantes, con un valor de **0.01%** (313 registros) y **3.50%** (1 registro) respectivamente.
 
 ![Grafico de dispersion](https://github.com/ajalca/cbe_credit_card/blob/exploracion/images/readme/10222024_dispersion_balance_y_credit_limit.png)
