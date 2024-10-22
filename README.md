@@ -9,7 +9,7 @@ Aquí se plantea el problema y se lo contextualiza. Para esto pueden basarse en 
 ### La solución: 
 <blockquote>
 Aquí se plantea la solución, que aunque es altamente técnica, en este punto de la presentación no se debe profundizar aún en ese tipo de detalles. Mencionen la solución técnica (segmentación de clientes) y cuál es su objetivo. Aquí también pueden mencionar soluciones existentes similares (machine learning-like) que hayan sido usadas en problemas similares.
-<blockquote>
+</blockquote>
 
 ## METODOLOGÍA
 ### Análisis exploratorio:
