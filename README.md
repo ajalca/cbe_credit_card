@@ -94,6 +94,7 @@ Hay unos outliers en pagos y compras superando los **30k**. Pero la mayoría de 
 <blockquote>
 Expliquen aquí todo el procesamiento que le realizaron a sus datos y justifíquenlo.
 </blockquote>
+
 ![Nulos](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_distribucion_missing.png)
 
 Se reemplazaron los valores faltantes con la mediana de cada columna numérica. Cómo se apreciaron varios outliers y está técnica no afecta a los valores extremos, ya que usa los valores centrales.
