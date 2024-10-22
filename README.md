@@ -9,9 +9,71 @@ aquí se plantea la solución, que aunque es altamente técnica, en este punto d
 
 ## METODOLOGÍA
 ### Análisis exploratorio:
+<blockquote>
 Utilicen este espacio para explicar a su audiencia el dataset con el que cuentan y los descubrimientos relevantes que realizaron sobre él durante la exploración. Dar preferencias a la descripción de columnas/descubrimientos que luego serán relevantes como sustentación de decisiones técnicas (limpieza de datos, feature engineering, etc).
+</blockquote>
 
+El dataset contiene 8k de registros aproximadamente, de las que contiene dos tipos de variables numéricas y categóricas, de la cuál CUST_ID no aporta información para el análisis.
+<ul>
+  <li>Variables numéricas
+    <ol>
+      <li>Balance</li>
+        <ul>
+            <li>BALANCE</li>
+            <li>PURCHASES</li>
+            <li>ONEOFF_PURCHASES</li>
+            <li>INSTALLMENTS_PURCHASES</li>
+            <li>CASH_ADVANCE</li>
+            <li>CREDIT_LIMIT</li>
+        </ul>
+      <li>Frecuencia</li>
+        <ul>
+            <li>BALANCE_FREQUENCY</li>
+            <li>PURCHASES_FREQUENCY</li>
+            <li>ONEOFF_PURCHASES_FREQUENCY</li>
+            <li>PURCHASES_INSTALLMENTS_FREQUENCY</li>
+            <li>CASH_ADVANCE_FREQUENCY</li>
+            <li>CASH_ADVANCE_TRX</li>
+            <li>PURCHASES_TRX</li>
+        </ul>
+      <li>Pagos</li>
+        <ul>
+            <li>PAYMENTS</li>
+            <li>MINIMUM_PAYMENTS</li>
+            <li>PRC_FULL_PAYMENT</li>
+        </ul>
+      <li>Otros</li>
+        <ul>
+            <li>TENURE</li>
+        </ul>
+    </ol>
+  </li>
+  <li>Variable categórica</li>
+    <ol>
+      <li>CUST_ID</li>
+    </ol>
+</ul>
+En MINIMUM_PAYMENTS y CREDIT_LIMIT hay valores faltantes, con un valor de 0.01% (313 registros) y 3.50% (1 registro) respectivamente.
 
+![Grafico de dispersion](https://github.com/ajalca/cbe_credit_card/tree/main/images/readme/10222024_dispersion_balance_y_credit_limit.png)
+A medida que aumenta el saldo en la tarjeta de crédito también aumente el límite de crédito, se ve un comportamiento de crecimiento ascendente.
+Entre un saldo menor a 5000 y una línea de crédito menor a 10000 hay mayor concentración por lo que se aprecia que la mayoría de clientes tienen un saldo y crédito bajo.
+En la parte superior derecha hay unos puntos outliers, que representa a unos pocos clientes con alto balance y crédito.
+Hay otra dispersión de puntos con valores superiores a 20000 en la línea de créditos pero con un balance bajo, puede representar clientes con alta límite de crédito disponible pero no lo usan.
+
+![Grafico de dispersion con categoría](https://github.com/ajalca/cbe_credit_card/tree/main/images/readme/10222024_dispersion_balance_y_credit_limit_por_tenure.png)
+Se agregó la antigüedad de los usuarios en meses, se aprecia para 6 meses en azul y para 12 meses en rojo. Los clientes con más antigüedad están más dispersos lo que indica gran variedad de saldos y líneas de crédito.
+
+![Grafico de cajas](https://github.com/ajalca/cbe_credit_card/tree/main/images/readme/10222024_plot_balance_y_tenure.png)
+La distribución entre el saldo y la antigüedad.
+Conforme la antigüedad aumenta es más variable el incremento en el saldo, y outliers en niveles superiores de saldo.
+Desde el 9° mes los outliers son más frecuentes lo que sugiere que los clientes van acumulando su saldo como avanza el tiempo.
+En cada uno de los niveles de antigüedad se aprecia a la mediana algo constante pero con un aumento en la dispersión por lo que no todos los clientes ahorran de la misma manera.
+
+![Histograma de conjuntos](https://github.com/ajalca/cbe_credit_card/tree/main/images/readme/10222024_plot_balance_y_tenure.png)
+La mayoría de los clientes tienen pagos relativamente bajos menor a 10000 por la concentración en la esquina inferior izquierda de la gráfica.
+Se ve una correlación positiva entre los pagos y las compras, a medida que aumentan los pagos también aumentan las compras; pero también hay una alta dispersión en está tendencia lo que nos indica que no es un comportamiento lineal para todos.
+Hay unos outliers en pagos y compras superando los 30000. Pero la mayoría de usuarios tienden hacer pagos y compras pequeñas como se visualiza en los histogramas.
 
 ### Procesamiento de datos
 Expliquen aquí todo el procesamiento que le realizaron a sus datos y justifíquenlo.
