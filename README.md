@@ -84,10 +84,21 @@ La mayoría de los clientes tienen pagos relativamente bajos menor a **10k** por
 Se ve una correlación positiva entre los pagos y las compras, a medida que aumentan los pagos también aumentan las compras; pero también hay una alta dispersión en está tendencia lo que nos indica que no es un comportamiento lineal para todos.
 Hay unos outliers en pagos y compras superando los **30k**. Pero la mayoría de usuarios tienden hacer pagos y compras pequeñas como se visualiza en los histogramas.
 
+![Correlacion](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_correlacion.png)
+
+*ONEOFF_PURCHASES* y *PURCHASES* tienen una correlación positiva muy fuerte **~0.92**, cuanto más gasta alguien en compras de pago único más aumentan sus compras totales.
+*INSTALLMENTS_PURCHASES*  y *PURCHASES* presentan una correlación fuerte **~0.68**, lo que indica que las compras a plazos frecuentes tienen un impacto significativo en las compras totales.
+*CASH_ADVANCE_FREQUENCY* y *BALANCE* tienen una correlación negativa fuerte **~-0.45**, lo que indica que los adelantos en efectivo frecuentes se asocian con saldos más bajos.
+
 ### Procesamiento de datos
 <blockquote>
 Expliquen aquí todo el procesamiento que le realizaron a sus datos y justifíquenlo.
 </blockquote>
+
+![Nulos](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_distribucion_missing.png)
+
+Se reemplazaron los valores faltantes con la mediana de cada columna numérica. Cómo se apreciaron varios outliers y está técnica no afecta a los valores extremos, ya que usa los valores centrales.
+*MINIMUM_PAYMENTS* o *CREDIT_LIMIT*, algunos clientes pueden tener límites o pagos extremadamente altos o bajos, lo que afectaría el promedio, pero no la mediana.
 
 ### Entrenamiento y tuneo de hiperparámetros: 
 <blockquote>
