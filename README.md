@@ -109,13 +109,13 @@ Mide qué tan cerca está un cliente de su límite de crédito con respecto a la
 ![2.1Variable](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10242024_stripplot_payments_to_balance.png)
 
 Pero se tuvieron problemas con la computadora al querer graficar esta nueva variable, se hizo una transformación logarítmica.
-Existen algunos outliers en el lado derecho (valores mayores a 0.8), hay algunos clientes que realizan pagos muy altos en proporción a su saldo.
+Existen algunos outliers en el lado derecho (valores **mayores a 0.8**), hay algunos clientes que realizan pagos muy altos en proporción a su saldo.
 
 ![2.2Variable](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10242024_distribucion_log_payments_to_balance.png)
 
 Mide la proporción de pagos realizados en comparación con el saldo. Un valor alto indica que el cliente paga gran parte de su saldo, mientras que un valor bajo puede indicar que no paga lo suficiente.
 
-La mayoría de los datos están concentrados en la parte baja de la escala logarítmica (entre 0 y 2), lo que indica que la mayoría de los clientes realizan pagos relativamente bajos en comparación con su balance.
+La mayoría de los datos están concentrados en la parte baja de la escala logarítmica (**entre 0 y 2**), lo que indica que la mayoría de los clientes realizan pagos relativamente bajos en comparación con su balance.
 
 ### Entrenamiento y tuneo de hiperparámetros: 
 <blockquote>
