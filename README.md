@@ -100,6 +100,23 @@ Expliquen aquí todo el procesamiento que le realizaron a sus datos y justifíqu
 Se reemplazaron los valores faltantes con la mediana de cada columna numérica. Cómo se apreciaron varios outliers y está técnica no afecta a los valores extremos, ya que usa los valores centrales.
 *MINIMUM_PAYMENTS* o *CREDIT_LIMIT*, algunos clientes pueden tener límites o pagos extremadamente altos o bajos, lo que afectaría el promedio, pero no la mediana.
 
+Se inicio el dataset con **17 variables**, sólo se a eliminado una columna porque el *CUST_ID* que no aporta para el análisis; se tienen finalmente **16 variables** para el análisis.
+
+![1Variable](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10242024_distribucion_purchases_to_credit_limit.png)
+
+Mide qué tan cerca está un cliente de su límite de crédito con respecto a las compras realizadas. Un valor alto puede indicar que el cliente está alcanzado el límite de su crédito disponible.
+
+![2.1Variable](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10242024_stripplot_payments_to_balance.png)
+
+Pero se tuvieron problemas con la computadora al querer graficar esta nueva variable, se hizo una transformación logarítmica.
+Existen algunos outliers en el lado derecho (valores mayores a 0.8), hay algunos clientes que realizan pagos muy altos en proporción a su saldo.
+
+![2.2Variable](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10242024_distribucion_log_payments_to_balance.png)
+
+Mide la proporción de pagos realizados en comparación con el saldo. Un valor alto indica que el cliente paga gran parte de su saldo, mientras que un valor bajo puede indicar que no paga lo suficiente.
+
+La mayoría de los datos están concentrados en la parte baja de la escala logarítmica (entre 0 y 2), lo que indica que la mayoría de los clientes realizan pagos relativamente bajos en comparación con su balance.
+
 ### Entrenamiento y tuneo de hiperparámetros: 
 <blockquote>
 Expliquen aquí la metodología que siguieron para el entrenamiento y tuneo. Expliquen y sustenten sus decisiones.
