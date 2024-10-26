@@ -122,6 +122,17 @@ La mayoría de los datos están concentrados en la parte baja de la escala logar
 Expliquen aquí la metodología que siguieron para el entrenamiento y tuneo. Expliquen y sustenten sus decisiones.
 </blockquote>
 
+![MetodoCodo](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_metodo_codo_n1.png)
+
+Se ve la variación de la "Suma de los Errores al Cuadrado" (SSE) en función de la cantidad de clusters K. Mientras los clusters están aumentando los SSE disminuyen porque están más cercanos  a su centro.
+El codo está *alrededor de 4* aproximadamente lo que representa los cluster para nuestros datos.
+
+![Silhouette](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_sihouette_n1.png)
+Se visualiza la separación entre los clusters. El score más alto se encuentre en el cluster 2, antes de que disminuya significativamente el score , el *cluster 3 y 4* son valores alto. Pero el score 4 se alinea con el gráfico del codo.
+
+Un óptimo cluster es **4** hay un cohesión entre dentro de los cluster y la separación entre ellos.
+
+
 ### Interpretación de los clusters:
 <blockquote>
 Expliquen la relación de las variables del modelo con los clusters (al menos 4) en el sentido del negocio, utilicen visualizaciones para poder ver el comportamiento de las variables en cada uno de los clusters.
