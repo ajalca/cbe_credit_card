@@ -8,7 +8,7 @@ En las instituciones financieras, la falta de una segmentación limita la capaci
 
 ### La solución: 
 <blockquote>
-Aquí se plantea la solución, que aunque es altamente técnica, en este punto de la presentación no se debe profundizar aún en ese tipo de detalles. Mencionen la solución técnica (segmentación de clientes) y cuál es su objetivo. Aquí también pueden mencionar soluciones existentes similares (machine learning-like) que hayan sido usadas en problemas similares.
+La solución a este problema se basa en la segmentación de clientes mediante técnicas de análisis de datos que permitirán identificar patrones comunes y crear perfiles específicos según el comportamiento de consumo y pago. Esta estrategia, ampliamente utilizada en la industria financiera a través de métodos de machine learning, facilita el desarrollo de productos personalizados al agrupar a los clientes en segmentos con características y necesidades similares. El objetivo es optimizar la oferta de servicios financieros y mejorar la satisfacción del cliente, aplicando un enfoque de segmentación avanzado que se ha demostrado efectivo en problemas similares de personalización de productos y fidelización en otras áreas comerciales..
 </blockquote>
 
 ## METODOLOGÍA
