@@ -3,7 +3,7 @@
 ## INTRODUCCIÓN
 ### El problema: 
 <blockquote>
-Aquí se plantea el problema y se lo contextualiza. Para esto pueden basarse en información que encuentren en internet. Pueden tratar de encontrar oportunidades de negocio en base a los datos que tienen disponibles, tal como pasa en su diario vivir.
+En las instituciones financieras, la falta de una segmentación limita la capacidad de ofrecer servicios adaptados a las necesidades y hábitos específicos de cada usuario, lo que resulta en una menor satisfacción y en la pérdida de oportunidades de fidelización y optimización de ingresos. Identificar y caracterizar a distintos grupos de clientes con base en sus patrones de consumo y pago es esencial para desarrollar productos financieros efectivos que maximicen el valor y la lealtad del cliente.
 </blockquote>
 
 ### La solución: 
