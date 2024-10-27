@@ -147,7 +147,9 @@ Los resultados obtenidos del modelo deberían ser cargados en alguna plataforma 
 
 ### LIMITACIONES
 <blockquote>
-Este es un espacio de autocrítica en donde describen las limitaciones que tiene su solución, es decir, factores que pudieron haber hecho que su solución no sea mejor de lo que es. Las limitaciones pueden ir desde el poder computacional, hasta la ausencia de alguna variable que consideren muy discriminante.
+Para poder segmentar aún mejor a la base de clientes, la falta de algunos datos financieros y de comportamiento podría limitar la precisión de nuestro modelo en la clasificación de los perfiles. Esto puede ser mitigado en futuras versiones del modelo si se recopilan datos más específicos, como información sobre ingresos y empleo.
+En cuanto a los modelos, aunque K-medoids es menos sensible que K-means, la presencia de outliers en ciertas variables puede afectar los clusters. En futuras mejoras, se pueden considerar métodos de detección y remoción de outliers o transformar variables que presenten alta variabilidad.
+En recursos computacionales, la actualización periódica del modelo requiere recursos computacionales, lo que puede ser una limitación si los datos crecen significativamente. Para reducir este costo, puede implementarse un enfoque de entrenamiento incremental.
 </blockquote>
 
 ### CONCLUSIONES Y RECOMENDACIONES
