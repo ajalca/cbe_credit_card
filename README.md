@@ -120,6 +120,8 @@ Se crea una categoría del limite de crédito por rangos: bins=[0, 1500, 3000, 6
 
 ![AnalysisCreditLimitCategory](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_analisis_credit_limit_category.png)
 
+No es necesario realizar encodig. Las variables son numéricas. Hay categoricas binarias, variables continuas y categoricas ordinales. Por lo tanto los algoritmos de ml podrán interpretar correctamente.
+
 ### Entrenamiento y tuneo de hiperparámetros: 
 
 ![MetodoCodo](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_metodo_codo_n1.png)
