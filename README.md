@@ -142,11 +142,20 @@ El cluster de color púrpura (**0**) se agrupa hacia valores más altos de *BALA
 
 
 ### Interpretación de los clusters:
-1.Cluster 0. Clientes con saldo disponible alto y score de compras alto
+1.Cluster 0. Clientes con saldo disponible alto y score de compras alto.
+
+Estos clientes aportan un alto valor a la institución financiera debido a sus altos niveles de gasto. Podrían beneficiarse de servicios premium o programas de recompensas más personalizados para aumentar su fidelidad.
+Recomendaciones: Proporcionar incentivos exclusivos, como acceso a eventos, tasas de interés preferenciales o beneficios en viajes, para retener a estos clientes y maximizar su rentabilidad.
 
 2.Cluster 1. Clientes con saldo disponible bajo y score de compras medio
 
+Este segmento valora la seguridad y el control financiero, prefiriendo evitar el endeudamiento.
+Recomendaciones: Crear productos que ofrezcan beneficios en compras cotidianas o descuentos en tiendas locales. Este grupo podría responder bien a incentivos que refuercen su interés en ahorro, como cashback en compras esenciales.
+
 3.Cluster 2. Clientes con saldo disponible medio y score de compras bajo
+
+Este grupo no depende activamente de la tarjeta de crédito y no aporta un alto valor de forma consistente, aunque puede ser útil en situaciones imprevistas.
+Recomendaciones: Crear incentivos para aumentar la frecuencia de uso, como ofertas de introducción a servicios adicionales o pequeños beneficios en las primeras compras del mes.
 
 
 ### Implementación en el negocio
