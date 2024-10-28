@@ -142,9 +142,12 @@ El cluster de color púrpura (**0**) se agrupa hacia valores más altos de *BALA
 
 
 ### Interpretación de los clusters:
-1.Cluster 0. Clientes con saldo disponible alto y score de compras alto                   
-2.Cluster 1. Clientes con saldo disponible bajo y score de compras medio                
-3.Cluster 2. Clientes con saldo disponible medio y score de compras bajo              
+1.Cluster 0. Clientes con saldo disponible alto y score de compras alto
+
+2.Cluster 1. Clientes con saldo disponible bajo y score de compras medio
+
+3.Cluster 2. Clientes con saldo disponible medio y score de compras bajo
+
 
 ### Implementación en el negocio
 De acuerdo a los clusters determinados, podemos segmentar a los clientes por su saldo y uso de crédito, con frecuencia de adelantos, y con pagos completos y frecuentes. Para así poder desarrollar diferentes estrategias de fidelización, de acuerdo a la necesidad de cada segmento, ya sean ofertas de inversión, líneas de crédito extendidas, programas de educación financiera. También se podría implementar programas de recompensas o fidelización a clientes que pagan sus préstamos antes del tiempo pactado, e incluso ofrecer productos financieros con bajas tasas de interés en adelantos en efectivo.
