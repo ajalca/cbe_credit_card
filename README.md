@@ -112,6 +112,14 @@ Mide la proporción de pagos realizados en comparación con el saldo. Un valor a
 
 La mayoría de los datos están concentrados en la parte baja de la escala logarítmica (**entre 0 y 2**), lo que indica que la mayoría de los clientes realizan pagos relativamente bajos en comparación con su balance.
 
+### Creación variable categorica para limite crédito: 
+
+![CreditLimitCategory](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_bins_credit_limit_category.png)
+
+Se crea una categoría del limite de crédito por rangos: bins=[0, 1500, 3000, 6000, 9000, data_cleaned['CREDIT_LIMIT'].max()]; para hacer un análisis categórico y no manejar la variable continua. Al aplicar estás categorias y relacionar las variables ['BALANCE', 'PURCHASES', 'CASH_ADVANCE','PURCHASES_TRX','PAYMENTS','TENURE'], se observan comportamientos similares para las categorias 1,2 y 3, es decir para créditos hasta 6000, y un comportamiento para los créditos superiores a 6000.
+
+(https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_analisis_credit_limit_category.png)
+
 ### Entrenamiento y tuneo de hiperparámetros: 
 
 ![MetodoCodo](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_metodo_codo_n1.png)
