@@ -142,7 +142,7 @@ De acuerdo a los clusters determinados, podemos segmentar a los clientes por su 
 Los resultados obtenidos del modelo deberían ser cargados en alguna plataforma CRM, asignando a cada cliente su cluster correspondiente. Para que así los equipos de ventas y marketing tomen en cuenta la información y puedan segmentar de manera óptima las estrategias, promociones, y la comunicación.
 
 ### LIMITACIONES
-Para poder segmentar aún mejor a la base de clientes, la falta de algunos datos financieros y de comportamiento podría limitar la precisión de nuestro modelo en la clasificación de los perfiles. Esto puede ser mitigado en futuras versiones del modelo si se recopilan datos más específicos, como información sobre ingresos y empleo.
+Para poder segmentar aún mejor a la base de clientes, la falta de algunos datos financieros y de comportamiento (patrones de consumo y pago), podría limitar la precisión de nuestro modelo en la clasificación de los perfiles. Esto puede ser mitigado en futuras versiones del modelo si se recopilan datos más específicos, como información sobre ingresos y empleo.
 En cuanto a los modelos, aunque K-medoids es menos sensible que K-means, la presencia de outliers en ciertas variables puede afectar los clusters. En futuras mejoras, se pueden considerar métodos de detección y remoción de outliers o transformar variables que presenten alta variabilidad.
 En recursos computacionales, la actualización periódica del modelo requiere recursos computacionales, lo que puede ser una limitación si los datos crecen significativamente. Para reducir este costo, puede implementarse un enfoque de entrenamiento incremental.
 
@@ -150,28 +150,28 @@ En recursos computacionales, la actualización periódica del modelo requiere re
 
 ### CONCLUSIONES
 
-Importancia de la Segmentación: 
+Importancia de la segmentación: 
 Segmentar a los clientes de acuerdo con sus patrones de consumo y pago es esencial para las instituciones financieras. Esto permite ofrecer servicios más personalizados, lo cual puede mejorar la satisfacción del cliente y optimizar las oportunidades de ingresos.
 
-Estrategia Basada en Machine Learning:
+Estrategia basada en machine learning:
 El enfoque propuesto se apoya en técnicas de análisis de datos y machine learning, lo que facilita la creación de perfiles de clientes basados en datos objetivos. Esto permite mejorar la fidelización a través de servicios personalizados.
 
-Potencial para Personalización y Rentabilidad:
+Potencial para personalización y rentabilidad:
 La segmentación, al identificar grupos específicos, permite no solo diseñar productos más alineados con las necesidades del cliente, sino también maximizar la rentabilidad y el valor del cliente para la institución.
 
 ### RECOMENDACIONES
 
-Explorar Variables Clave de Segmentación: Es crucial elegir correctamente las variables de consumo y pago para una segmentación precisa. Analizar variables como frecuencia de uso de la tarjeta, promedio de gasto y puntualidad en los pagos puede aportar información valiosa para definir segmentos.
+Explorar variables clave de segmentación: Es crucial elegir correctamente las variables de consumo y pago para una segmentación precisa. Analizar variables como frecuencia de uso de la tarjeta, promedio de gasto y puntualidad en los pagos puede aportar información valiosa para definir segmentos.
 
-Evaluación Continua de Segmentos: Debido a los cambios en el comportamiento del cliente, una revisión periódica de los segmentos permitirá mantener la relevancia de los productos ofrecidos.
+Evaluación continua de segmentos: Debido a los cambios en el comportamiento del cliente, una revisión periódica de los segmentos permitirá mantener la relevancia de los productos ofrecidos.
 
-Implementación de Modelos de Segmentación Automatizados: Automatizar los procesos de segmentación y actualización de perfiles puede ayudar a que las estrategias de personalización se mantengan alineadas con el comportamiento cambiante de los clientes.
+Implementación de modelos de megmentación automatizados: Automatizar los procesos de segmentación y actualización de perfiles puede ayudar a que las estrategias de personalización se mantengan alineadas con el comportamiento cambiante de los clientes.
 
 ### FUTURE WORK
-Incorporación de Modelos Predictivos: Incorporar modelos de predicción para detectar cambios en los hábitos de los clientes, lo cual puede alertar a la institución sobre posibles fugas de clientes o necesidades de servicios adicionales.
+Incorporación de modelos predictivos: Incorporar modelos de predicción para detectar cambios en los hábitos de los clientes, lo cual puede alertar a la institución sobre posibles fugas de clientes o necesidades de servicios adicionales.
 
-Análisis de Impacto de la Personalización: Realizar estudios sobre cómo los servicios personalizados afectan la lealtad del cliente y los ingresos generados. Esto podría incluir pruebas A/B para evaluar diferentes enfoques de segmentación.
+Análisis de impacto de la personalización: Realizar estudios sobre cómo los servicios personalizados afectan la lealtad del cliente y los ingresos generados. Esto podría incluir pruebas A/B para evaluar diferentes enfoques de segmentación.
 
-Segmentación Dinámica Basada en Comportamiento en Tiempo Real: Integrar tecnología que permita actualizar los segmentos en tiempo real a medida que los clientes usan sus tarjetas, para ofrecer productos adaptativos.
+Segmentación dinámica basada en comportamiento en tiempo real: Integrar tecnología que permita actualizar los segmentos en tiempo real ha medida que los clientes usan sus tarjetas, para ofrecer productos adaptativos.
 
 </blockquote>
