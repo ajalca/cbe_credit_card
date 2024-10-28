@@ -8,8 +8,8 @@ En las instituciones financieras, la falta de una segmentación limita la capaci
 La solución a este problema se basa en la segmentación de clientes mediante técnicas de análisis de datos que permitirán identificar patrones comunes y crear perfiles específicos según el comportamiento de consumo y pago. Esta estrategia, ampliamente utilizada en la industria financiera a través de métodos de machine learning, facilita el desarrollo de productos personalizados al agrupar a los clientes en segmentos con características y necesidades similares. Nofal, S. (2024) utilizó la segmentación de clientes para identificar aquellos altamente valorados en un banco en Jordania, basándose en la frecuencia y el monto de sus transacciones, demostrando que la segmentación basada en comportamiento transaccional ayuda a los bancos a mejorar la personalización y efectividad de sus estrategias. Esta solución tiene como objetivo optimizar la oferta de servicios financieros y mejorar la satisfacción del cliente, aplicando un enfoque de segmentación avanzado que se ha demostrado efectivo en problemas similares de personalización de productos y fidelización en otras áreas comerciales. 
 
 Referencia:                                                                                                                                                        
-Nofal, S. (2024). Identifying highly-valued bank customers with current accounts based on the frequency and amount of transactions. Heliyon, 10(13).
-[Link del artículo](https://doi.org/10.1016/j.heliyon.2024.e33490)
+Nofal, S. (2024). Identifying highly-valued bank customers with current accounts based on the frequency and amount of transactions. Heliyon, 10(13).          
+[DOI](https://doi.org/10.1016/j.heliyon.2024.e33490)
 
 
 ## METODOLOGÍA
