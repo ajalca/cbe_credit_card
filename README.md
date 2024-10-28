@@ -119,6 +119,11 @@ Se visualiza la separación entre los clusters. El score más alto se encuentre 
 
 Un óptimo cluster es **4** hay un cohesión entre dentro de los cluster y la separación entre ellos.
 
+![Cluster jerarquico](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico.png)
+Se refleja tres grupo de colores, lo que representa los clusters. Hay una mayor similitud en los grupos de la parte baja que los que están más arriba.
+
+![Cluster jerarquico Frecuencia](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico_freq.png)
+El cluster de color púrpura (**0**) se agrupa hacia valores más altos de *BALANCE*, los clusters de otros colores están distribuidos en distintos niveles de *BALANCE_FREQUENCY*.  Para los puntos con el mismo color, tienen similitudes en sus valores de *BALANCE* y *BALANCE_FREQUENCY*.  Nos permitirá identificar patrones en la frecuencia de balance y los montos de balance entre los distintos grupos.
 
 
 ### Interpretación de los clusters:
