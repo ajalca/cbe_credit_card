@@ -2,20 +2,13 @@
 
 ## INTRODUCCIÓN
 ### El problema: 
-<blockquote>
 En las instituciones financieras, la falta de una segmentación limita la capacidad de ofrecer servicios adaptados a las necesidades y hábitos específicos de cada usuario, lo que resulta en una menor satisfacción y en la pérdida de oportunidades de fidelización y optimización de ingresos. Identificar y caracterizar a distintos grupos de clientes con base en sus patrones de consumo y pago es esencial para desarrollar productos financieros efectivos que maximicen el valor y la lealtad del cliente.
-</blockquote>
 
 ### La solución: 
-<blockquote>
 La solución a este problema se basa en la segmentación de clientes mediante técnicas de análisis de datos que permitirán identificar patrones comunes y crear perfiles específicos según el comportamiento de consumo y pago. Esta estrategia, ampliamente utilizada en la industria financiera a través de métodos de machine learning, facilita el desarrollo de productos personalizados al agrupar a los clientes en segmentos con características y necesidades similares. El objetivo es optimizar la oferta de servicios financieros y mejorar la satisfacción del cliente, aplicando un enfoque de segmentación avanzado que se ha demostrado efectivo en problemas similares de personalización de productos y fidelización en otras áreas comerciales..
-</blockquote>
 
 ## METODOLOGÍA
 ### Análisis exploratorio:
-<blockquote>
-Utilicen este espacio para explicar a su audiencia el dataset con el que cuentan y los descubrimientos relevantes que realizaron sobre él durante la exploración. Dar preferencias a la descripción de columnas/descubrimientos que luego serán relevantes como sustentación de decisiones técnicas (limpieza de datos, feature engineering, etc).
-</blockquote>
 
 El dataset contiene **8k de registros** aproximadamente, de las que contiene dos tipos de ***variables numéricas*** y ***variables categóricas***, de la cuál *CUST_ID* no aporta información para el análisis.
 <ul>
@@ -91,9 +84,6 @@ Hay unos outliers en pagos y compras superando los **30k**. Pero la mayoría de 
 *CASH_ADVANCE_FREQUENCY* y *BALANCE* tienen una correlación negativa fuerte **~-0.45**, lo que indica que los adelantos en efectivo frecuentes se asocian con saldos más bajos.
 
 ### Procesamiento de datos
-<blockquote>
-Expliquen aquí todo el procesamiento que le realizaron a sus datos y justifíquenlo.
-</blockquote>
 
 ![Nulos](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_distribucion_missing.png)
 
@@ -118,9 +108,6 @@ Mide la proporción de pagos realizados en comparación con el saldo. Un valor a
 La mayoría de los datos están concentrados en la parte baja de la escala logarítmica (**entre 0 y 2**), lo que indica que la mayoría de los clientes realizan pagos relativamente bajos en comparación con su balance.
 
 ### Entrenamiento y tuneo de hiperparámetros: 
-<blockquote>
-Expliquen aquí la metodología que siguieron para el entrenamiento y tuneo. Expliquen y sustenten sus decisiones.
-</blockquote>
 
 ![MetodoCodo](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_metodo_codo_n1.png)
 
@@ -132,6 +119,12 @@ Se visualiza la separación entre los clusters. El score más alto se encuentre 
 
 Un óptimo cluster es **4** hay un cohesión entre dentro de los cluster y la separación entre ellos.
 
+![Cluster jerarquico](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico.png)
+Se refleja tres grupo de colores, lo que representa los clusters. Hay una mayor similitud en los grupos de la parte baja que los que están más arriba.
+
+![Cluster jerarquico Frecuencia](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico_freq.png)
+El cluster de color púrpura (**0**) se agrupa hacia valores más altos de *BALANCE*, los clusters de otros colores están distribuidos en distintos niveles de *BALANCE_FREQUENCY*.  Para los puntos con el mismo color, tienen similitudes en sus valores de *BALANCE* y *BALANCE_FREQUENCY*.  Nos permitirá identificar patrones en la frecuencia de balance y los montos de balance entre los distintos grupos.
+
 
 ### Interpretación de los clusters:
 <blockquote>
@@ -139,18 +132,14 @@ Expliquen la relación de las variables del modelo con los clusters (al menos 4)
 </blockquote>
 
 ### IMPLEMENTACIÓN EN EL NEGOCIO
-<blockquote>
 De acuerdo a los clusters determinados, podemos segmentar a los clientes por su saldo y uso de crédito, con frecuencia de adelantos, y con pagos completos y frecuentes. Para así poder desarrollar diferentes estrategias de fidelización, de acuerdo a la necesidad de cada segmento, ya sean ofertas de inversión, líneas de crédito extendidas, programas de educación financiera. También se podría implementar programas de recompensas o fidelización a clientes que pagan sus préstamos antes del tiempo pactado, e incluso ofrecer productos financieros con bajas tasas de interés en adelantos en efectivo.
   
-Los resultados obtenidos del modelo deberían ser cargados en alguna plataforma CRM, asignando a cada cliente su cluster correspondiente. Para que así los equipos de ventas y marketing tomen en cuenta la información y puedan segmentar de manera óptima las estrategias, promociones, y la comunicación. 
-</blockquote>
+Los resultados obtenidos del modelo deberían ser cargados en alguna plataforma CRM, asignando a cada cliente su cluster correspondiente. Para que así los equipos de ventas y marketing tomen en cuenta la información y puedan segmentar de manera óptima las estrategias, promociones, y la comunicación.
 
 ### LIMITACIONES
-<blockquote>
 Para poder segmentar aún mejor a la base de clientes, la falta de algunos datos financieros y de comportamiento podría limitar la precisión de nuestro modelo en la clasificación de los perfiles. Esto puede ser mitigado en futuras versiones del modelo si se recopilan datos más específicos, como información sobre ingresos y empleo.
 En cuanto a los modelos, aunque K-medoids es menos sensible que K-means, la presencia de outliers en ciertas variables puede afectar los clusters. En futuras mejoras, se pueden considerar métodos de detección y remoción de outliers o transformar variables que presenten alta variabilidad.
 En recursos computacionales, la actualización periódica del modelo requiere recursos computacionales, lo que puede ser una limitación si los datos crecen significativamente. Para reducir este costo, puede implementarse un enfoque de entrenamiento incremental.
-</blockquote>
 
 ### CONCLUSIONES Y RECOMENDACIONES
 <blockquote>
