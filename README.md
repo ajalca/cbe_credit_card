@@ -63,7 +63,7 @@ En *MINIMUM_PAYMENTS* y *CREDIT_LIMIT* hay valores faltantes, con un valor de **
 A medida que aumenta el saldo en la tarjeta de crédito también aumente el límite de crédito, se ve un comportamiento de crecimiento ascendente.
 Entre un saldo menor a **5k** y una línea de crédito menor a **10k** hay mayor concentración por lo que se aprecia que la mayoría de clientes tienen un saldo y crédito bajo.
 En la parte superior derecha hay unos puntos outliers, que representa a unos pocos clientes con alto balance y crédito.
-Hay otra dispersión de puntos con valores superiores a **20k** en la línea de créditos pero con un balance bajo, puede representar clientes con alta límite de crédito disponible pero no lo usan.
+Hay otra dispersión de puntos con valores superiores a **20k** en la línea de crédito pero con un balance bajo, puede representar clientes con alta límite de crédito disponible pero no lo usan.
 
 ![Grafico de dispersion con categoría](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_dispersion_balance_y_credit_limit_por_tenure.png)
 
@@ -79,7 +79,7 @@ En cada uno de los niveles de antigüedad se aprecia a la mediana algo constante
 ![Histograma de conjuntos](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_histograma_payments_purchases.png)
 
 La mayoría de los clientes tienen pagos relativamente bajos menor a **10k** por la concentración en la esquina inferior izquierda de la gráfica.
-Se ve una correlación positiva entre los pagos y las compras, a medida que aumentan los pagos también aumentan las compras; pero también hay una alta dispersión en está tendencia lo que nos indica que no es un comportamiento lineal para todos.
+Se ve una correlación positiva entre los pagos y las compras, ha medida que aumentan los pagos también aumentan las compras; pero también hay una alta dispersión en está tendencia lo que nos indica que no es un comportamiento lineal para todos.
 Hay unos outliers en pagos y compras superando los **30k**. Pero la mayoría de usuarios tienden hacer pagos y compras pequeñas como se visualiza en los histogramas.
 
 ![Correlacion](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10222024_correlacion.png)
@@ -95,11 +95,11 @@ Hay unos outliers en pagos y compras superando los **30k**. Pero la mayoría de 
 Se reemplazaron los valores faltantes con la mediana de cada columna numérica. Cómo se apreciaron varios outliers y está técnica no afecta a los valores extremos, ya que usa los valores centrales.
 *MINIMUM_PAYMENTS* o *CREDIT_LIMIT*, algunos clientes pueden tener límites o pagos extremadamente altos o bajos, lo que afectaría el promedio, pero no la mediana.
 
-Se inicio el dataset con **17 variables**, sólo se a eliminado una columna porque el *CUST_ID* que no aporta para el análisis; se tienen finalmente **16 variables** para el análisis.
+Se inicio el dataset con **17 variables**, sólo se ha eliminado una columna porque el *CUST_ID* que no aporta para el análisis; se tienen finalmente **16 variables** para el análisis.
 
 ![1Variable](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10242024_distribucion_purchases_to_credit_limit.png)
 
-Mide qué tan cerca está un cliente de su límite de crédito con respecto a las compras realizadas. Un valor alto puede indicar que el cliente está alcanzado el límite de su crédito disponible.
+Mide qué tan cerca está un cliente de su línea de crédito con respecto a las compras realizadas. Un valor alto puede indicar que el cliente está alcanzado el límite de su crédito disponible.
 
 ![2.1Variable](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10242024_stripplot_payments_to_balance.png)
 
@@ -147,12 +147,31 @@ En cuanto a los modelos, aunque K-medoids es menos sensible que K-means, la pres
 En recursos computacionales, la actualización periódica del modelo requiere recursos computacionales, lo que puede ser una limitación si los datos crecen significativamente. Para reducir este costo, puede implementarse un enfoque de entrenamiento incremental.
 
 ### CONCLUSIONES Y RECOMENDACIONES
-<blockquote>
-Las conclusiones pueden ir dirigidas a si pudieron resolver el problema exitosamente.
-Las recomendaciones pueden ir dirigidas a otros científicos de datos o analistas de negocio que quieran construir una solución similar. En ese caso, estas recomendaciones pueden ser basadas en los problemas que ustedes enfrentaron durante el desarrollo. Las recomendaciones también pueden ir dirigidas al negocio, por ejemplo, recomendando el registro de cierta información que creen que pudiera ser bastante discriminativa pero que ustedes no tenían disponible en su dataset.
-</blockquote>
+
+### CONCLUSIONES
+
+Importancia de la Segmentación: 
+Segmentar a los clientes de acuerdo con sus patrones de consumo y pago es esencial para las instituciones financieras. Esto permite ofrecer servicios más personalizados, lo cual puede mejorar la satisfacción del cliente y optimizar las oportunidades de ingresos.
+
+Estrategia Basada en Machine Learning:
+El enfoque propuesto se apoya en técnicas de análisis de datos y machine learning, lo que facilita la creación de perfiles de clientes basados en datos objetivos. Esto permite mejorar la fidelización a través de servicios personalizados.
+
+Potencial para Personalización y Rentabilidad:
+La segmentación, al identificar grupos específicos, permite no solo diseñar productos más alineados con las necesidades del cliente, sino también maximizar la rentabilidad y el valor del cliente para la institución.
+
+### RECOMENDACIONES
+
+Explorar Variables Clave de Segmentación: Es crucial elegir correctamente las variables de consumo y pago para una segmentación precisa. Analizar variables como frecuencia de uso de la tarjeta, promedio de gasto y puntualidad en los pagos puede aportar información valiosa para definir segmentos.
+
+Evaluación Continua de Segmentos: Debido a los cambios en el comportamiento del cliente, una revisión periódica de los segmentos permitirá mantener la relevancia de los productos ofrecidos.
+
+Implementación de Modelos de Segmentación Automatizados: Automatizar los procesos de segmentación y actualización de perfiles puede ayudar a que las estrategias de personalización se mantengan alineadas con el comportamiento cambiante de los clientes.
 
 ### FUTURE WORK
-<blockquote>
-En esta sección ustedes suponen que seguirían trabajando en este proyecto o que alguién más lo hará y entonces mencionan qué cosas adicionarían o probarían para mejorar el proyecto.
+Incorporación de Modelos Predictivos: Incorporar modelos de predicción para detectar cambios en los hábitos de los clientes, lo cual puede alertar a la institución sobre posibles fugas de clientes o necesidades de servicios adicionales.
+
+Análisis de Impacto de la Personalización: Realizar estudios sobre cómo los servicios personalizados afectan la lealtad del cliente y los ingresos generados. Esto podría incluir pruebas A/B para evaluar diferentes enfoques de segmentación.
+
+Segmentación Dinámica Basada en Comportamiento en Tiempo Real: Integrar tecnología que permita actualizar los segmentos en tiempo real a medida que los clientes usan sus tarjetas, para ofrecer productos adaptativos.
+
 </blockquote>
