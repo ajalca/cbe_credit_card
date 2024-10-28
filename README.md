@@ -139,7 +139,10 @@ Expliquen la relación de las variables del modelo con los clusters (al menos 4)
 ### IMPLEMENTACIÓN EN EL NEGOCIO
 De acuerdo a los clusters determinados, podemos segmentar a los clientes por su saldo y uso de crédito, con frecuencia de adelantos, y con pagos completos y frecuentes. Para así poder desarrollar diferentes estrategias de fidelización, de acuerdo a la necesidad de cada segmento, ya sean ofertas de inversión, líneas de crédito extendidas, programas de educación financiera. También se podría implementar programas de recompensas o fidelización a clientes que pagan sus préstamos antes del tiempo pactado, e incluso ofrecer productos financieros con bajas tasas de interés en adelantos en efectivo.
   
-Los resultados obtenidos del modelo deberían ser cargados en alguna plataforma CRM, asignando a cada cliente su cluster correspondiente. Para que así los equipos de ventas y marketing tomen en cuenta la información y puedan segmentar de manera óptima las estrategias, promociones, y la comunicación.
+Los resultados obtenidos del modelo deberían ser cargados en alguna plataforma CRM, como lo han hecho bancos y fintechs como BBVA y Santander. Asignando a cada cliente su cluster correspondiente, los equipos de ventas y marketing tendrán la información a mano, y así, sus estrategias de ventas y campañas de comunicación tendrán resultados más eficientes.
+
+Referencia:                                                                                                                                                        
+Choudhary, Pradeep & Scholar II, Research. (2024). Integrating AI into Financial CRM: A Path to Personalized Customer Engagement. 7. 24-32.
 
 ### LIMITACIONES
 Para poder segmentar aún mejor a la base de clientes, la falta de algunos datos financieros y de comportamiento (patrones de consumo y pago), podría limitar la precisión de nuestro modelo en la clasificación de los perfiles. Esto puede ser mitigado en futuras versiones del modelo si se recopilan datos más específicos, como información sobre ingresos y empleo.
