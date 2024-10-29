@@ -116,24 +116,24 @@ La mayoría de los datos están concentrados en la parte baja de la escala logar
 
 ![CreditLimitCategory](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_bins_credit_limit_category.png)
 
-Se crea una categoría del limite de crédito por rangos: bins=[0, 1500, 3000, 6000, 9000, data_cleaned['CREDIT_LIMIT'].max()]; para hacer un análisis categórico y no manejar la variable continua. Al aplicar estás categorias y relacionar las variables ['BALANCE', 'PURCHASES', 'CASH_ADVANCE', 'PURCHASES_TRX', 'PAYMENTS', 'TENURE'], se observan comportamientos similares para las categorias 1,2 y 3, es decir para créditos hasta 6000, y un comportamiento para los créditos superiores a 6000.
+Se crea una categoría del limite de crédito por rangos: bins=[0, 1500, 3000, 6000, 9000, data_cleaned['CREDIT_LIMIT'].max()]; para hacer un análisis categórico y no manejar la variable continua. Al aplicar estas categorías y relacionar las variables ['BALANCE', 'PURCHASES', 'CASH_ADVANCE', 'PURCHASES_TRX', 'PAYMENTS', 'TENURE'], se observan comportamientos similares para las categorias 1, 2 y 3, es decir para créditos hasta 6000, y un comportamiento para los créditos superiores a 6000.
 
 ![AnalysisCreditLimitCategory](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_analisis_credit_limit_category.png)
 
-No es necesario realizar encodig. Las variables son numéricas. Hay categoricas binarias, variables continuas y categoricas ordinales. Por lo tanto los algoritmos de ml podrán interpretar correctamente.
+No es necesario realizar encoding. Las variables son numéricas. Hay categoricas binarias, variables continuas y categoricas ordinales. Por lo tanto los algoritmos de ml podrán interpretar correctamente.
 
 ### Entrenamiento y tuneo de hiperparámetros: 
 
 ![MetodoCodo](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_metodo_codo_n1.png)
 
 Se ve la variación de la "Suma de los Errores al Cuadrado" (SSE) en función de la cantidad de clusters K. Mientras los clusters están aumentando los SSE disminuyen porque están más cercanos  a su centro.
-El codo está *alrededor de 4* aproximadamente lo que representa los cluster para nuestros datos.
+El codo está *alrededor de 3* porque tiene una mayor variación aproximadamente lo que representa los cluster para nuestros datos; aunque con este método no se puede ser concluyente.
 
 ![Silhouette](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_sihouette_n1.png)
 
-Se visualiza la separación entre los clusters. El score más alto se encuentre en el cluster 2, antes de que disminuya significativamente el score , el *cluster 3 y 4* son valores alto. Pero el score 4 se alinea con el gráfico del codo.
+Se visualiza la separación entre los clusters. El score más alto se encuentre en el cluster 2, antes de que disminuya significativamente el score , el *cluster 3 y 4* son valores alto. Pero el score 3 se alinea con el gráfico del codo.
 
-Un óptimo cluster es **4** hay un cohesión entre dentro de los cluster y la separación entre ellos.
+Un óptimo cluster es **3** hay un cohesión entre dentro de los cluster y la separación entre ellos.
 
 ![kMeans](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_distribucion.png)
 
@@ -142,12 +142,11 @@ Con KMeans, muestra el número de observaciones con cada cluster.
 ![kMeans](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_among_cluster.png)
 
 Con KMeans, el cluster 2 parece agrupar a usuarios con balances, compras y pagos más altos, mientras que los clusters 0 y 1 representan a usuarios con menores valores en estas tres variables.
-No están claro este modelo para agrupar los clientes con poco saldo disponible.
+No es muy claro este modelo para agrupar los clientes con poco saldo disponible.
 
 ![DBSCAN](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_DBSCAN.png)
 
 Los cluster tienen una forma circular. Hay tres clusters claros y densamente conectados, sin puntos ruidosos, sugiriendo que estos grupos representan subconjuntos bien definidos de datos con características distintas.
-
 
 ![Cluster jerarquico](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico.png)
 
