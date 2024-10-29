@@ -129,6 +129,11 @@ No es necesario realizar encodig. Las variables son numéricas. Hay categoricas 
 Se ve la variación de la "Suma de los Errores al Cuadrado" (SSE) en función de la cantidad de clusters K. Mientras los clusters están aumentando los SSE disminuyen porque están más cercanos  a su centro.
 El codo está *alrededor de 4* aproximadamente lo que representa los cluster para nuestros datos.
 
+![Silhouette](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_sihouette_n1.png)
+Se visualiza la separación entre los clusters. El score más alto se encuentre en el cluster 2, antes de que disminuya significativamente el score , el *cluster 3 y 4* son valores alto. Pero el score 4 se alinea con el gráfico del codo.
+
+Un óptimo cluster es **4** hay un cohesión entre dentro de los cluster y la separación entre ellos.
+
 ![kMeans](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_distribucion.png)
 Con KMeans, muestra el número de observaciones con cada cluster.
 
@@ -139,10 +144,6 @@ No están claro este modelo para agrupar los clientes con poco saldo disponible.
 ![DBSCAN](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_DBSCAN.png)
 Los cluster tienen una forma circular. Hay tres clusters claros y densamente conectados, sin puntos ruidosos, sugiriendo que estos grupos representan subconjuntos bien definidos de datos con características distintas.
 
-![Silhouette](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_sihouette_n1.png)
-Se visualiza la separación entre los clusters. El score más alto se encuentre en el cluster 2, antes de que disminuya significativamente el score , el *cluster 3 y 4* son valores alto. Pero el score 4 se alinea con el gráfico del codo.
-
-Un óptimo cluster es **4** hay un cohesión entre dentro de los cluster y la separación entre ellos.
 
 ![Cluster jerarquico](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico.png)
 Se refleja tres grupo de colores, lo que representa los clusters. Hay una mayor similitud en los grupos de la parte baja que los que están más arriba.
