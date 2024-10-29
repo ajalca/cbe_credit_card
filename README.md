@@ -130,25 +130,31 @@ Se ve la variación de la "Suma de los Errores al Cuadrado" (SSE) en función de
 El codo está *alrededor de 4* aproximadamente lo que representa los cluster para nuestros datos.
 
 ![Silhouette](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10252024_sihouette_n1.png)
+
 Se visualiza la separación entre los clusters. El score más alto se encuentre en el cluster 2, antes de que disminuya significativamente el score , el *cluster 3 y 4* son valores alto. Pero el score 4 se alinea con el gráfico del codo.
 
 Un óptimo cluster es **4** hay un cohesión entre dentro de los cluster y la separación entre ellos.
 
 ![kMeans](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_distribucion.png)
+
 Con KMeans, muestra el número de observaciones con cada cluster.
 
 ![kMeans](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_among_cluster.png)
+
 Con KMeans, el cluster 2 parece agrupar a usuarios con balances, compras y pagos más altos, mientras que los clusters 0 y 1 representan a usuarios con menores valores en estas tres variables.
 No están claro este modelo para agrupar los clientes con poco saldo disponible.
 
 ![DBSCAN](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10282024_DBSCAN.png)
+
 Los cluster tienen una forma circular. Hay tres clusters claros y densamente conectados, sin puntos ruidosos, sugiriendo que estos grupos representan subconjuntos bien definidos de datos con características distintas.
 
 
 ![Cluster jerarquico](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico.png)
+
 Se refleja tres grupo de colores, lo que representa los clusters. Hay una mayor similitud en los grupos de la parte baja que los que están más arriba.
 
 ![Cluster jerarquico Frecuencia](https://github.com/ajalca/cbe_credit_card/blob/main/images/readme/10272024_clustering_jerarquico_freq.png)
+
 El cluster de color púrpura (**0**) se agrupa hacia valores más altos de *BALANCE*, los clusters de otros colores están distribuidos en distintos niveles de *BALANCE_FREQUENCY*.  Para los puntos con el mismo color, tienen similitudes en sus valores de *BALANCE* y *BALANCE_FREQUENCY*.  Nos permitirá identificar patrones en la frecuencia de balance y los montos de balance entre los distintos grupos.
 
 
